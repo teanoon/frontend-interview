@@ -1,0 +1,53 @@
+/*
+ * ==================================================================
+ * 1/4 Describe relative、fixed、absolute and static of position property
+ *
+ *
+ *
+ *
+ *
+ *
+ */
+
+/*
+ * ==================================================================
+ * 2/4 Guess the shape of the following style
+ */
+ul.ladder
+  li
+    list-style: none
+    float: left
+    width: 100%
+    &:nth-child(odd)
+      background-color: black
+    &::before, &::after
+      content: '\00a0'
+      display: block
+      width: 30%
+      background: red
+    &::before
+      float: left
+    &::after
+      float: right
+
+/*
+ * ==================================================================
+ * 3/4 Implement a way to clear float with best competibility.
+ *
+ *
+ *
+ *
+ *
+ *
+ */
+
+/*
+ * ==================================================================
+ * 4/4 Implement a button style with press/hover/clicked/toggle states.
+ *
+ *
+ *
+ *
+ *
+ *
+ */
