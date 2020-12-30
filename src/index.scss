@@ -1,0 +1,43 @@
+/*
+ * ==================================================================
+ * 1/2 Guess the shape of the following style
+ */
+ul.shape-name {
+  display: flex;
+
+  li {
+    list-style: none;
+    display: list-item;
+    width: 100%;
+
+    &:nth-child(odd) {
+      background-color: black;
+    }
+
+    &::before, &::after {
+      content: '\00a0';
+      display: block;
+      width: 30%;
+      background: red;
+    }
+
+    &::before {
+      float: left;
+    }
+
+    &::after {
+      float: right;
+    }
+  }
+}
+
+/*
+ * ==================================================================
+ * 2/2 Implement a button style with press/hover/clicked/toggle states.
+ *
+ *
+ *
+ *
+ *
+ *
+ */

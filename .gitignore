@@ -4,3 +4,4 @@ docker/.zsh_history
 app/node_modules/
 app/dist/
 app/npm-debug.log
+node_modules
