@@ -12,7 +12,7 @@ const canFillGap = (smallQuantity: number, bigQuantity: number, totalGap: number
     && gapLeftByBigBrick % bigBrickSize == 0
 }
 
-test('The one rule them all', () => {
+test('canFillGap fills the gap', () => {
     expect(canFillGap(3, 1, 9)).toBeTruthy()
     expect(canFillGap(3, 1, 8)).toBeFalsy()
     expect(canFillGap(3, 2, 10)).toBeTruthy()
@@ -35,7 +35,7 @@ const canBalance = (array: number[]) => {
 
 }
 
-test('Again, the one rule them all', () => {
+test('canBalance finds the balance point', () => {
     expect(canBalance([1, 1, 1, 2, 1])).toBeTruthy()
     expect(canBalance([2, 1, 1, 2, 1])).toBeFalsy()
     expect(canBalance([10, 10])).toBeTruthy()
@@ -57,7 +57,7 @@ const sortList = (array: any[]) => {
 
 }
 
-test('Finally, the one rule them all', () => {
+test('sortList sorts number like elements', () => {
     expect(sortList([5, 3, 2, 4, 1])).toEqual([1, 2, 3, 4, 5])
     expect(sortList([5, [3], [2], 4, 1])).toEqual([1, [2], [3], 4, 5])
     expect(sortList([5, [3, 2], 4, 1])).toEqual([1, [2, 3], 4, 5])
